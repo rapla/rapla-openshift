@@ -30,7 +30,6 @@
     <!--
     <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
     -->
-<!--
     <Resource name="jdbc/rapladb"
               url="jdbc:mysql://${OPENSHIFT_MYSQL_DB_HOST}:${OPENSHIFT_MYSQL_DB_PORT}/${OPENSHIFT_APP_NAME}"
               driverClassName="com.mysql.jdbc.Driver"
@@ -42,7 +41,7 @@
               maxIdle="5"
               maxWait="10000"
               />
-    -->           
+    <--  
     <Resource name="jdbc/rapladb"
               url="jdbc:postgresql://${OPENSHIFT_POSTGRESQL_DB_HOST}:${OPENSHIFT_POSTGRESQL_DB_PORT}/${OPENSHIFT_APP_NAME}"
               driverClassName="org.postgresql.Driver"
@@ -53,6 +52,7 @@
               maxActive="20"
               maxIdle="5"
               maxWait="10000"/>
+			  -->
     <Environment name="rapladatasource" value="rapladb" type="java.lang.String" override="false"/>
 
 </Context>
